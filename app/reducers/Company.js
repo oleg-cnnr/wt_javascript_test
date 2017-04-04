@@ -4,6 +4,7 @@ import update from 'immutability-helper'
 
 export const SET_COMPANIES = 'company/SET_COMPANIES'
 export const SAGA_GET_COMPANIES = 'company/SAGA_GET_COMPANIES'
+export const SAGA_CREATE_COMPANY = 'company/SAGA_CREATE_COMPANY'
 
 const initialState = {
   companies: []

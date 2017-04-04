@@ -1,6 +1,8 @@
 //@flow
 import React, { PropTypes as pt } from 'react'
+import { Link } from 'react-router'
 import { Container, Header, Company } from './CompaniesStyle'
+import RaisedButton from 'material-ui/RaisedButton'
 
 const Companies = React.createClass({
   propTypes: {
@@ -17,6 +19,12 @@ const Companies = React.createClass({
 
     return <Container>
       <Header>Companies</Header>
+      <RaisedButton 
+        primary={true}
+        label="Add Company"
+        style={{margin: '10px'}}
+        containerElement={<Link to="companies/new"/>}
+      />
       {companies.map(c =>
         <Company key={c.id}>{c.name}</Company>
       )}

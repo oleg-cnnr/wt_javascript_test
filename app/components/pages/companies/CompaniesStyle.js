@@ -18,3 +18,9 @@ export const Company = styled.div`
   font-size: 20px;
   margin: 10px;
 `
+
+export const FormWrapper = styled.div`
+  margin: 10px 30%;
+  width: 40%;
+  text-align: center;
+`
